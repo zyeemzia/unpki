@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@600;700&display=swap');
+/* UNPKI theme: deep navy, UN blue and amber */
+:root{
+  --bg:#060e22;--bg2:#0a1630;--card:#0f1f40;--card2:#152a52;--line:#27406f;--ink:#f1f5fd;--mut:#a9b8d6;
+  --acc:#2f76d2;--acc2:#ffb020;--teal:#7fb6f2;--gold:#ffb020;--ok:#3fcf8e;--bad:#ff5b63;
+  --shadow:0 12px 34px rgba(0,0,0,.45);--r:16px;
+  --hero:radial-gradient(760px 380px at 88% 6%,rgba(255,176,32,.2),transparent 62%),
+         radial-gradient(900px 480px at 8% 100%,rgba(91,146,229,.26),transparent 60%),
+         repeating-linear-gradient(135deg,rgba(255,176,32,.035) 0 1px,transparent 1px 34px),
+         linear-gradient(150deg,#0e2350,#060e22);
+}
+:root[data-theme="light"]{
+  --bg:#f4f6fb;--bg2:#fbfcfe;--card:#ffffff;--card2:#e8eefa;--line:#c9d5ea;--ink:#101a33;--mut:#55617c;
+  --acc:#1a5fb4;--acc2:#a85b00;--teal:#1a5fb4;--gold:#a85b00;--shadow:0 8px 22px rgba(10,26,58,.09);
+  --hero:radial-gradient(760px 380px at 88% 6%,rgba(255,176,32,.2),transparent 62%),
+         repeating-linear-gradient(135deg,rgba(26,95,180,.05) 0 1px,transparent 1px 34px),
+         linear-gradient(150deg,#ffffff,#dfe8f8);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 Inter,system-ui,sans-serif}
+h1,h2,h3,h4{font-family:Fraunces,Georgia,serif;line-height:1.2;margin:.2em 0 .5em;font-weight:700}
+a{color:var(--teal)}
+.mono{font-family:'JetBrains Mono',monospace}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+/* Bangla: fonts with full conjunct support and a little more line height */
+html[lang="bn"] body{font-family:'Noto Sans Bengali',Inter,system-ui,sans-serif;line-height:1.8}
+html[lang="bn"] h1,html[lang="bn"] h2,html[lang="bn"] h3,html[lang="bn"] h4{font-family:'Noto Serif Bengali',Fraunces,serif;line-height:1.35}
+html[lang="bn"] .kick,html[lang="bn"] .num,html[lang="bn"] .chap{letter-spacing:.04em;font-family:'Noto Sans Bengali','JetBrains Mono',monospace}
